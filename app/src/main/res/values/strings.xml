@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MusicPro</string>
+    <string name="button_venues">Venues</string>
+    <string name="button_map">Map</string>
+    <string name="new_venue">New Venue</string>
+
+    <string name="text_venue">Venue name</string>
+    <string name="venue_name_hint">Enter venue name</string>
+    <string name="text_address">Venue address</string>
+    <string name="address_hint">Enter address</string>
+    <string name="text_opening_time">Opening time</string>
+    <string name="button_done">Done</string>
+    <string name="button_delete">Delete</string>
+
+    <string name="warning_dialog_title">Warning</string>
+    <string name="warning_dialog_message">Venue details are incomplete.</string>
+    <string name="delete_dialog_title">Confirm</string>
+    <string name="delete_dialog_message">Delete venue?</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/detail_fragment_padding"
+    tools:context=".venue.VenueDetailFragment">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/detail_margin_bottom_gap"
+        android:text="@string/text_venue"
+        android:textSize="@dimen/detail_label_size" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/detail_margin_bottom_gap"
+        android:ems="10"
+        android:hint="@string/venue_name_hint"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/text_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/detail_margin_bottom_gap"
+        android:text="@string/text_address"
+        android:textSize="@dimen/detail_label_size" />
+
+    <EditText
+        android:id="@+id/edit_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:layout_marginBottom="@dimen/detail_margin_bottom_gap"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:hint="@string/address_hint"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:padding="4dp"
+        android:textColor="@color/colorTextPrimary"
+        android:textColorHint="@color/colorSecondary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/detail_margin_bottom_gap">
+
+        <TextView
+            android:id="@+id/text_opening_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_opening_time"
+            android:textSize="@dimen/detail_label_size" />
+
+        <EditText
+            android:id="@+id/edit_opening_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            tools:text="11:00am" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/detail_margin_bottom_gap">
+
+        <Button
+            android:id="@+id/button_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/detail_button_margin"
+            android:layout_weight="1"
+            android:text="@string/button_done" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/detail_button_margin"
+            android:layout_weight="1"
+            android:text="@string/button_delete" />
+    </LinearLayout>
+</LinearLayout>
